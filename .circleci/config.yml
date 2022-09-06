@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   coveralls: coveralls/coveralls@1.0.6
 jobs:
-  build:
+  build1:
     docker:
       - image: 'circleci/node:10.0.0'
     steps:
