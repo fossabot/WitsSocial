@@ -2,15 +2,6 @@ version: 2.1
 orbs:
   coveralls: coveralls/coveralls@1.0.6
 jobs:
-  build1:
-    docker:
-      - image: 'circleci/node:10.0.0'
-    steps:
-      - checkout
-      - run:
-          name: Install and Make
-          command: npm install && make test-coverage
-      - coveralls/upload
   build:
     working_directory: ~/code
     docker:
@@ -31,9 +22,6 @@ jobs:
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle" }}
-      - run:
-          name: Run Tests
-          command: ./gradlew lint test
       - store_artifacts:
           path: app/build/reports
           destination: reports
