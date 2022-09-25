@@ -47,6 +47,7 @@ jobs:
       - run:
           name: Install dependencies, run tests, and collect coverage
           command: ./gradlew build
+      -  files: coverage.xml,e2e-coverage.xml
       - codecov/upload
 
           
