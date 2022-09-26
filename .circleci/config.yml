@@ -34,7 +34,8 @@
 version: 2.1
 orbs:
   codecov: codecov/codecov@3
-
+github_checks:
+    annotations: true
 jobs:
   build:
     docker:
