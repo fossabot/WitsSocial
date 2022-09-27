@@ -161,6 +161,7 @@ public class SearchUsers extends AppCompatActivity {
         super.onStart();
         mainAdapter.startListening();
     }
+
     @Override
     protected void onStop() {
         super.onStop();

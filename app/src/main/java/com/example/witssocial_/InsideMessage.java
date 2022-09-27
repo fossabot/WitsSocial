@@ -29,7 +29,7 @@ import java.util.Locale;
 public class InsideMessage extends AppCompatActivity {
     //variables used when activity loads
     LinearLayout go_back;
-    de.hdodenhof.circleimageview.CircleImageView go_profile;
+    //de.hdodenhof.circleimageview.CircleImageView go_profile;
     TextView show_friend_name;
 
     //variables used when displaying messages

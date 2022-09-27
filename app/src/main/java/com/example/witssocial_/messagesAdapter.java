@@ -33,7 +33,7 @@ public class messagesAdapter extends FirebaseRecyclerAdapter<user, messagesAdapt
 
         String name= model.getUsername();
         holder.friend_name.setText(name);
-        holder.friend_profile.setImageResource(R.drawable.ic_account);
+//        holder.friend_profile.setImageResource(R.drawable.ic_account);
 
         holder.message_layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,13 +57,13 @@ public class messagesAdapter extends FirebaseRecyclerAdapter<user, messagesAdapt
 
     class myViewHolder extends RecyclerView.ViewHolder{
         TextView friend_name,friend_message;
-        de.hdodenhof.circleimageview.CircleImageView friend_profile;
+//        de.hdodenhof.circleimageview.CircleImageView friend_profile;
         CardView message_layout;
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
             friend_name=(TextView) itemView.findViewById(R.id.friend_name_chat);
             //friend_message=(TextView) itemView.findViewById(R.id.friend_message_chat);
-            friend_profile=(de.hdodenhof.circleimageview.CircleImageView)itemView.findViewById(R.id.friend_profile_chat);
+//            friend_profile=(de.hdodenhof.circleimageview.CircleImageView)itemView.findViewById(R.id.friend_profile_chat);
             message_layout=(CardView) itemView.findViewById(R.id.message_friend_id);
 
         }

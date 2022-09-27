@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".friendProfile">
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/tommy"/>
+
+    <TextView
+        android:id="@+id/fpUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text=".@friend username"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/userDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fpUsername"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="The description of the user will go on this spot right here and detail everything about them"
+        android:fontFamily="@font/ubuntu_bold"/>
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="380dp"
+        android:text="Posts                 Followers         Following"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntu_bold"/>
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="350dp"
+        android:text=" 375K                    20M                     5K"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntu_bold"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Posts"
+        android:background="@drawable/my_button"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="420dp"
+        android:id="@+id/OtherProfilePostButton"
+        android:fontFamily="@font/ubuntu_bold"/>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:id="@+id/OtherProfileCommentButton"
+        android:layout_toRightOf="@+id/OtherProfilePostButton"
+        android:layout_marginTop="420dp"
+        android:text="Comments"
+        android:background="@drawable/my_button"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/ubuntu_bold"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/OtherProfileMessageButton"
+        android:layout_marginTop="420dp"
+        android:text="Follow"
+        android:background="@drawable/my_button"
+        android:textColor="@color/black"
+        android:layout_marginLeft="280dp"
+        android:fontFamily="@font/ubuntu_bold"/>
+
+
+</RelativeLayout>
